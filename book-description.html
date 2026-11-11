@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Description Rewrite | Fatihat Nifemi Literary Conduit, Book Marketer Service</title>
+<meta name="description" content="Professional book description rewrite service by Fatihat Nifemi Literary Conduit. Transform your Amazon book description into compelling sales copy that converts browsers into buyers.">
+<meta name="keywords" content="Book Description Rewrite, Amazon Book Description, Book Marketer, Author Growth Strategist, Book Sales Copy, Book Blurb Writing">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --burgundy: #6B2737;
+    --gold: #C9A961;
+    --ivory: #F5F0E8;
+    --charcoal: #1C1C1C;
+    --emerald: #0F3D2E;
+    --cream: #FFF9F0;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: Georgia, serif;
+    background: var(--cream);
+    color: var(--charcoal);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 { font-family: 'Bree Serif', Georgia, serif; font-weight: normal; }
+
+  /* NAVBAR */
+  .navbar {
+    position: fixed; top: 0; left: 0; right: 0;
+    background: rgba(255, 249, 240, 0.97);
+    backdrop-filter: blur(10px);
+    padding: 15px 5%;
+    display: flex; justify-content: space-between; align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(107, 39, 55, 0.08);
+  }
+  .nav-left { display: flex; align-items: center; gap: 12px; }
+  .nav-left img {
+    width: 45px; height: 45px; border-radius: 50%;
+    object-fit: cover; border: 2px solid var(--gold);
+  }
+  .logo-text {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.1rem; color: var(--burgundy); line-height: 1.1;
+  }
+  .logo-text span { display: block; font-size: 0.7rem; color: var(--emerald); letter-spacing: 2px; }
+  .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+  .nav-links a {
+    text-decoration: none; color: var(--charcoal);
+    font-family: 'Bree Serif', serif; font-size: 0.95rem;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--burgundy); }
+  .nav-links a.active { color: var(--burgundy); border-bottom: 2px solid var(--gold); }
+  .btn-outline-nav {
+    padding: 8px 20px; border: 2px solid var(--burgundy);
+    border-radius: 30px; color: var(--burgundy) !important;
+    transition: all 0.3s;
+  }
+  .btn-outline-nav:hover { background: var(--burgundy); color: var(--cream) !important; }
+  .btn-fill-nav {
+    padding: 8px 22px;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    border-radius: 30px; color: var(--cream) !important;
+    transition: all 0.3s;
+  }
+  .btn-fill-nav:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(107, 39, 55, 0.3); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 28px; height: 3px; background: var(--burgundy); border-radius: 2px; transition: 0.3s; }
+
+  /* HERO */
+  .hero {
+    margin-top: 80px;
+    padding: 100px 5% 80px;
+    background: linear-gradient(135deg, var(--burgundy) 0%, var(--emerald) 100%);
+    color: var(--cream);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(201, 169, 97, 0.15), transparent 50%);
+  }
+  .hero-content { position: relative; z-index: 2; max-width: 900px; margin: 0 auto; }
+  .hero-tag {
+    display: inline-block; padding: 8px 20px;
+    background: rgba(201, 169, 97, 0.2); border: 1px solid var(--gold);
+    border-radius: 30px; color: var(--gold);
+    font-family: 'Bree Serif', serif; font-size: 0.85rem;
+    letter-spacing: 2px; margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: 3.5rem; margin-bottom: 20px; color: var(--cream);
+    line-height: 1.1;
+  }
+  .hero h1 span { color: var(--gold); font-style: italic; }
+  .hero p {
+    font-size: 1.2rem; max-width: 700px; margin: 0 auto;
+    color: rgba(245, 240, 232, 0.9);
+  }
+
+  /* WHY SECTION */
+  .why-section {
+    padding: 80px 5%;
+    background: var(--cream);
+  }
+  .why-container {
+    max-width: 1000px; margin: 0 auto;
+    text-align: center;
+  }
+  .why-container h2 {
+    font-size: 2.5rem; color: var(--burgundy); margin-bottom: 25px;
+  }
+  .why-container p {
+    font-size: 1.1rem; color: var(--charcoal); margin-bottom: 20px;
+  }
+  .why-stats {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px; margin-top: 50px;
+  }
+  .stat-item {
+    padding: 30px 20px; background: var(--ivory);
+    border-radius: 15px; border-top: 4px solid var(--gold);
+    transition: transform 0.3s;
+  }
+  .stat-item:hover { transform: translateY(-5px); }
+  .stat-item .num {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5rem; color: var(--burgundy);
+    display: block; margin-bottom: 8px;
+  }
+  .stat-item .label { color: var(--emerald); font-size: 0.95rem; font-style: italic; }
+
+  /* BEFORE AFTER */
+  .ba-section {
+    padding: 80px 5%;
+    background: var(--ivory);
+  }
+  .section-header { text-align: center; max-width: 800px; margin: 0 auto 60px; }
+  .section-tag {
+    display: inline-block; padding: 6px 18px;
+    background: var(--burgundy); color: var(--gold);
+    font-family: 'Bree Serif', serif; font-size: 0.8rem;
+    letter-spacing: 2px; border-radius: 20px; margin-bottom: 15px;
+  }
+  .section-header h2 { font-size: 2.5rem; color: var(--burgundy); margin-bottom: 15px; }
+  .section-header p { font-size: 1.1rem; color: var(--charcoal); }
+
+  .ba-grid {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+  }
+  .ba-card {
+    background: var(--cream); border-radius: 15px;
+    overflow: hidden; box-shadow: 0 15px 40px rgba(28, 28, 28, 0.08);
+    transition: transform 0.3s;
+  }
+  .ba-card:hover { transform: translateY(-5px); }
+  .ba-card.before { border-top: 5px solid #999; }
+  .ba-card.after { border-top: 5px solid var(--gold); }
+  .ba-img { height: 200px; overflow: hidden; }
+  .ba-img img { width: 100%; height: 100%; object-fit: cover; }
+  .ba-body { padding: 35px; }
+  .ba-label {
+    display: inline-block; padding: 5px 15px;
+    font-family: 'Bree Serif', serif; font-size: 0.75rem;
+    letter-spacing: 2px; border-radius: 15px; margin-bottom: 15px;
+  }
+  .ba-card.before .ba-label { background: #999; color: var(--cream); }
+  .ba-card.after .ba-label { background: var(--gold); color: var(--burgundy); }
+  .ba-body h3 {
+    font-size: 1.4rem; color: var(--burgundy); margin-bottom: 15px;
+  }
+  .ba-body p {
+    font-style: italic; color: var(--charcoal);
+    font-size: 0.98rem; line-height: 1.8;
+  }
+  .ba-card.before .ba-body p { color: #666; }
+
+  /* PROCESS */
+  .process-section {
+    padding: 80px 5%;
+    background: var(--cream);
+  }
+  .process-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px; max-width: 1200px; margin: 0 auto;
+  }
+  .process-step {
+    text-align: center; padding: 35px 25px;
+    background: var(--ivory); border-radius: 15px;
+    border-top: 4px solid var(--gold);
+    transition: transform 0.3s;
+  }
+  .process-step:hover { transform: translateY(-8px); }
+  .step-number {
+    width: 55px; height: 55px; margin: 0 auto 20px;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    color: var(--gold); font-family: 'Bree Serif', serif;
+    font-size: 1.5rem; display: flex; align-items: center; justify-content: center;
+    border-radius: 50%;
+  }
+  .process-step h3 { color: var(--burgundy); font-size: 1.3rem; margin-bottom: 12px; }
+  .process-step p { color: var(--charcoal); font-size: 0.95rem; }
+
+  /* WHAT YOU GET */
+  .get-section {
+    padding: 80px 5%;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    color: var(--cream);
+  }
+  .get-container {
+    max-width: 1000px; margin: 0 auto;
+  }
+  .get-header { text-align: center; margin-bottom: 50px; }
+  .get-header .tag {
+    display: inline-block; padding: 6px 18px;
+    background: rgba(201, 169, 97, 0.2); border: 1px solid var(--gold);
+    color: var(--gold);
+    font-family: 'Bree Serif', serif; font-size: 0.8rem;
+    letter-spacing: 2px; border-radius: 20px; margin-bottom: 15px;
+  }
+  .get-header h2 { font-size: 2.5rem; color: var(--gold); margin-bottom: 15px; }
+  .get-header p { font-size: 1.1rem; color: rgba(245, 240, 232, 0.92); }
+  .get-list {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .get-item {
+    background: rgba(201, 169, 97, 0.08);
+    border: 1px solid rgba(201, 169, 97, 0.2);
+    padding: 25px; border-radius: 12px;
+    display: flex; gap: 15px; align-items: flex-start;
+    transition: all 0.3s;
+  }
+  .get-item:hover {
+    background: rgba(201, 169, 97, 0.15);
+    transform: translateY(-3px);
+  }
+  .get-check {
+    color: var(--gold); font-size: 1.5rem; line-height: 1; min-width: 25px;
+  }
+  .get-item h4 { color: var(--cream); margin-bottom: 5px; font-size: 1.1rem; }
+  .get-item p { color: rgba(245, 240, 232, 0.88); font-size: 0.95rem; }
+
+  /* PRICING CARD */
+  .pricing-section {
+    padding: 80px 5%;
+    background: var(--ivory);
+  }
+  .pricing-container {
+    max-width: 700px; margin: 0 auto;
+  }
+  .pricing-card {
+    background: var(--cream);
+    border-radius: 25px; padding: 60px 45px;
+    box-shadow: 0 25px 60px rgba(107, 39, 55, 0.15);
+    text-align: center;
+    border: 3px solid var(--gold);
+    position: relative;
+  }
+  .pricing-badge {
+    position: absolute; top: -18px; left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    color: var(--gold); padding: 8px 25px;
+    border-radius: 25px; font-family: 'Bree Serif', serif;
+    font-size: 0.85rem; letter-spacing: 2px;
+  }
+  .pricing-card h2 {
+    font-size: 2rem; color: var(--burgundy); margin-bottom: 10px;
+  }
+  .pricing-tagline {
+    color: var(--emerald); font-style: italic; margin-bottom: 25px;
+  }
+  .price-display {
+    font-family: 'Bree Serif', serif;
+    font-size: 4.5rem; color: var(--burgundy);
+    line-height: 1; margin-bottom: 10px;
+  }
+  .price-display small {
+    font-size: 1.2rem; color: var(--charcoal);
+    font-family: Georgia, serif;
+  }
+  .price-note {
+    color: var(--emerald); font-size: 0.95rem;
+    margin-bottom: 30px; font-style: italic;
+  }
+  .free-badge {
+    display: inline-block; padding: 8px 20px;
+    background: var(--gold); color: var(--burgundy);
+    border-radius: 20px; font-family: 'Bree Serif', serif;
+    font-size: 0.9rem; margin-bottom: 30px;
+  }
+  .pricing-features {
+    list-style: none; text-align: left; margin-bottom: 35px;
+    max-width: 400px; margin-left: auto; margin-right: auto;
+  }
+  .pricing-features li {
+    padding: 10px 0; padding-left: 30px; position: relative;
+    color: var(--charcoal); font-size: 1rem;
+    border-bottom: 1px solid rgba(201, 169, 97, 0.2);
+  }
+  .pricing-features li::before {
+    content: '✓'; position: absolute; left: 0;
+    color: var(--gold); font-weight: bold; font-size: 1.2rem;
+  }
+  .pricing-cta {
+    display: inline-block; padding: 16px 45px;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    color: var(--cream); text-decoration: none;
+    font-family: 'Bree Serif', serif; font-size: 1.1rem;
+    border-radius: 30px; transition: all 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .pricing-cta::before {
+    content: ''; position: absolute; top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+  }
+  .pricing-cta:hover::before { left: 100%; }
+  .pricing-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(107, 39, 55, 0.35);
+  }
+
+  /* ORDER FORM */
+  .order-section {
+    padding: 80px 5%;
+    background: var(--cream);
+  }
+  .order-container {
+    max-width: 800px; margin: 0 auto;
+    background: var(--ivory); border-radius: 20px;
+    padding: 50px 45px;
+    box-shadow: 0 15px 45px rgba(107, 39, 55, 0.1);
+  }
+  .order-header { text-align: center; margin-bottom: 35px; }
+  .order-header h2 {
+    font-size: 2rem; color: var(--burgundy); margin-bottom: 10px;
+  }
+  .order-header p { color: var(--charcoal); font-size: 1rem; }
+  .order-form {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+  }
+  .order-form .full { grid-column: 1 / -1; }
+  .order-form label {
+    font-family: 'Bree Serif', serif; color: var(--burgundy);
+    font-size: 0.95rem; margin-bottom: 8px; display: block;
+  }
+  .order-form input,
+  .order-form select,
+  .order-form textarea {
+    width: 100%; padding: 14px 18px;
+    border: 2px solid rgba(201, 169, 97, 0.3);
+    border-radius: 10px; background: var(--cream);
+    color: var(--charcoal); font-family: Georgia, serif;
+    font-size: 1rem; outline: none;
+    transition: border-color 0.3s;
+  }
+  .order-form input:focus,
+  .order-form select:focus,
+  .order-form textarea:focus { border-color: var(--burgundy); }
+  .order-form textarea { resize: vertical; min-height: 120px; }
+  .order-submit {
+    grid-column: 1 / -1; margin-top: 10px;
+  }
+  .order-submit button {
+    width: 100%; padding: 16px;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    color: var(--cream); border: none;
+    font-family: 'Bree Serif', serif; font-size: 1.1rem;
+    border-radius: 30px; cursor: pointer; transition: all 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .order-submit button::before {
+    content: ''; position: absolute; top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+  }
+  .order-submit button:hover::before { left: 100%; }
+  .order-submit button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(107, 39, 55, 0.35);
+  }
+
+  /* FAQ */
+  .faq-section {
+    padding: 80px 5%;
+    background: var(--ivory);
+  }
+  .faq-container { max-width: 850px; margin: 0 auto; }
+  .faq-item {
+    background: var(--cream); border-radius: 12px;
+    margin-bottom: 15px; overflow: hidden;
+    border-left: 4px solid var(--gold);
+    transition: box-shadow 0.3s;
+  }
+  .faq-item:hover { box-shadow: 0 8px 25px rgba(107, 39, 55, 0.1); }
+  .faq-question {
+    padding: 20px 25px; cursor: pointer;
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: 'Bree Serif', serif; color: var(--burgundy);
+    font-size: 1.1rem;
+  }
+  .faq-toggle { color: var(--gold); font-size: 1.5rem; transition: transform 0.3s; }
+  .faq-item.open .faq-toggle { transform: rotate(45deg); }
+  .faq-answer {
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.4s ease; padding: 0 25px;
+  }
+  .faq-item.open .faq-answer { max-height: 500px; padding: 0 25px 20px; }
+  .faq-answer p { color: var(--charcoal); font-size: 0.98rem; }
+
+  /* FOOTER */
+  footer { background: var(--charcoal); color: var(--ivory); padding: 70px 5% 0; }
+  .footer-grid {
+    max-width: 1300px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 50px; padding-bottom: 50px;
+  }
+  .footer-brand h3 { color: var(--gold); font-size: 1.4rem; margin-bottom: 15px; font-family: 'Bree Serif', serif; }
+  .footer-brand p { color: rgba(245, 240, 232, 0.8); margin-bottom: 20px; font-size: 0.95rem; }
+  .social-links { display: flex; gap: 15px; }
+  .social-links a {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--burgundy); color: var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none; transition: all 0.3s;
+    font-family: 'Bree Serif', serif;
+  }
+  .social-links a:hover { background: var(--gold); color: var(--burgundy); transform: translateY(-3px); }
+  .footer-col h4 { color: var(--gold); margin-bottom: 18px; font-size: 1.1rem; font-family: 'Bree Serif', serif; }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 10px; }
+  .footer-col ul li a { color: rgba(245, 240, 232, 0.8); text-decoration: none; font-size: 0.95rem; transition: color 0.3s; }
+  .footer-col ul li a:hover { color: var(--gold); }
+  .footer-col p { color: rgba(245, 240, 232, 0.8); font-size: 0.95rem; margin-bottom: 10px; }
+  .footer-quote {
+    border-top: 1px solid rgba(201, 169, 97, 0.2);
+    border-bottom: 1px solid rgba(201, 169, 97, 0.2);
+    padding: 25px 0; text-align: center;
+    max-width: 1300px; margin: 0 auto;
+  }
+  .footer-quote p { font-style: italic; color: var(--gold); font-size: 1.05rem; font-family: 'Bree Serif', serif; }
+  .footer-bottom {
+    max-width: 1300px; margin: 0 auto; padding: 25px 0;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px;
+  }
+  .footer-bottom p { color: rgba(245, 240, 232, 0.7); font-size: 0.9rem; }
+  .footer-bottom .links a {
+    color: rgba(245, 240, 232, 0.7); text-decoration: none; margin-left: 20px; font-size: 0.9rem;
+  }
+  .footer-bottom .links a:hover { color: var(--gold); }
+
+  /* ANIMATIONS */
+  .animate-on-scroll { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+  .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .hamburger { display: flex; }
+    .nav-links {
+      position: fixed; top: 75px; right: -100%; width: 75%; height: 100vh;
+      background: var(--cream); flex-direction: column; padding: 40px 25px;
+      transition: right 0.4s; box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+    }
+    .nav-links.active { right: 0; }
+    .hero h1 { font-size: 2.3rem; }
+    .ba-grid { grid-template-columns: 1fr; }
+    .order-form { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 35px; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .footer-bottom .links a { margin: 0 10px; }
+  }
+  @media (max-width: 500px) {
+    .hero { padding: 70px 5% 60px; }
+    .hero h1 { font-size: 1.9rem; }
+    .section-header h2, .why-container h2, .get-header h2 { font-size: 1.8rem; }
+    .price-display { font-size: 3.5rem; }
+    .pricing-card { padding: 45px 25px; }
+    .order-container { padding: 35px 20px; }
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="founder.png" alt="Fatihat Nifemi, Book Marketer">
+    <div class="logo-text">
+      Fatihat Nifemi
+      <span>LITERARY CONDUIT</span>
+    </div>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="packages.html">Packages</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="book-description.html" class="active">Book Description</a></li>
+    <li><a href="free-guide.html" class="btn-outline-nav">Free Guide</a></li>
+    <li><a href="contact.html" class="btn-fill-nav">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">BOOK DESCRIPTION REWRITE</div>
+    <h1>Turn Browsers Into <span>Buyers</span> With a Book Description That Actually Sells</h1>
+    <p>Your Amazon book description is the single most important piece of sales copy you will ever write. Let us rewrite yours into something that grabs attention, communicates value, and converts readers.</p>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why-section">
+  <div class="why-container">
+    <h2>Why Your Book Description Matters More Than You Think</h2>
+    <p>You have 10 seconds. That is how long the average reader spends deciding whether to buy your book after landing on your Amazon page. Not your cover. Not your reviews. Your description.</p>
+    <p>A weak description quietly costs authors thousands in lost sales every single year. A strong one does the heavy lifting for you, converting curious browsers into committed buyers while you sleep.</p>
+    <div class="why-stats">
+      <div class="stat-item">
+        <span class="num">10s</span>
+        <span class="label">Average decision time</span>
+      </div>
+      <div class="stat-item">
+        <span class="num">3x</span>
+        <span class="label">Potential conversion lift</span>
+      </div>
+      <div class="stat-item">
+        <span class="num">1</span>
+        <span class="label">Single most important asset</span>
+      </div>
+      <div class="stat-item">
+        <span class="num">48hr</span>
+        <span class="label">Typical turnaround time</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE AFTER -->
+<section class="ba-section">
+  <div class="section-header animate-on-scroll">
+    <div class="section-tag">SEE THE DIFFERENCE</div>
+    <h2>Before and After</h2>
+    <p>A real example of how we transform flat descriptions into compelling sales copy.</p>
+  </div>
+  <div class="ba-grid">
+    <div class="ba-card before animate-on-scroll">
+      <div class="ba-img"><img src="description-before.png" alt="Before book description rewrite"></div>
+      <div class="ba-body">
+        <span class="ba-label">BEFORE</span>
+        <h3>The Original Description</h3>
+        <p>"This is a book about a woman named Sarah who goes on a journey. She meets interesting people and learns important lessons. It is a story about love, loss, and finding yourself. Readers will enjoy this emotional and thoughtful novel."</p>
+      </div>
+    </div>
+    <div class="ba-card after animate-on-scroll">
+      <div class="ba-img"><img src="description-after.png" alt="After book description rewrite"></div>
+      <div class="ba-body">
+        <span class="ba-label">AFTER</span>
+        <h3>The Rewrite That Sells</h3>
+        <p>"Sarah has everything. Until the morning she wakes up with nothing left to lose. What begins as a run from her shattered life becomes something she never expected: a road trip across the country, a stranger who sees her clearly for the first time, and the one truth she spent twenty years trying to forget. For readers of Taylor Jenkins Reid and Celeste Ng, this is a story about the brave, beautiful mess of starting over."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process-section">
+  <div class="section-header animate-on-scroll">
+    <div class="section-tag">HOW IT WORKS</div>
+    <h2>Our 4-Step Process</h2>
+    <p>Simple, fast, and designed around you.</p>
+  </div>
+  <div class="process-grid">
+    <div class="process-step animate-on-scroll">
+      <div class="step-number">01</div>
+      <h3>You Order</h3>
+      <p>Fill out the quick form below with your book details. Payment is simple and secure.</p>
+    </div>
+    <div class="process-step animate-on-scroll">
+      <div class="step-number">02</div>
+      <h3>We Research</h3>
+      <p>We study your book, your genre, your comparable titles, and your ideal reader carefully.</p>
+    </div>
+    <div class="process-step animate-on-scroll">
+      <div class="step-number">03</div>
+      <h3>We Rewrite</h3>
+      <p>We craft a compelling, conversion-focused description tailored to your book's unique strengths.</p>
+    </div>
+    <div class="process-step animate-on-scroll">
+      <div class="step-number">04</div>
+      <h3>You Receive</h3>
+      <p>Within 48 to 72 hours, you receive your rewritten description, formatted and ready to upload.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section class="get-section">
+  <div class="get-container">
+    <div class="get-header">
+      <div class="tag">WHAT IS INCLUDED</div>
+      <h2>Everything You Need, Nothing You Do Not</h2>
+      <p>A complete package designed to make your Amazon listing work harder for you.</p>
+    </div>
+    <div class="get-list">
+      <div class="get-item animate-on-scroll">
+        <span class="get-check">✓</span>
+        <div>
+          <h4>Fully Rewritten Description</h4>
+          <p>Up to 400 words of compelling, conversion-focused sales copy.</p>
+        </div>
+      </div>
+      <div class="get-item animate-on-scroll">
+        <span class="get-check">✓</span>
+        <div>
+          <h4>HTML Formatting Included</h4>
+          <p>Ready-to-paste formatted version for your Amazon dashboard.</p>
+        </div>
+      </div>
+      <div class="get-item animate-on-scroll">
+        <span class="get-check">✓</span>
+        <div>
+          <h4>Hook-Driven Opening Line</h4>
+          <p>The most important sentence of your description, crafted to stop the scroll.</p>
+        </div>
+      </div>
+      <div class="get-item animate-on-scroll">
+        <span class="get-check">✓</span>
+        <div>
+          <h4>Comparable Titles Section</h4>
+          <p>Strategic placement of "for readers of" lines to attract your ideal audience.</p>
+        </div>
+      </div>
+      <div class="get-item animate-on-scroll">
+        <span class="get-check">✓</span>
+        <div>
+          <h4>SEO Keyword Integration</h4>
+          <p>Natural, searchable keywords woven throughout to boost discoverability.</p>
+        </div>
+      </div>
+      <div class="get-item animate-on-scroll">
+        <span class="get-check">✓</span>
+        <div>
+          <h4>One Round of Revisions</h4>
+          <p>Not quite perfect? Request one revision at no additional cost.</p>
+        </div>
+      </div>
+      <div class="get-item animate-on-scroll">
+        <span class="get-check">✓</span>
+        <div>
+          <h4>48 to 72 Hour Delivery</h4>
+          <p>Fast turnaround so you can upload and start selling as soon as possible.</p>
+        </div>
+      </div>
+      <div class="get-item animate-on-scroll">
+        <span class="get-check">✓</span>
+        <div>
+          <h4>Personal Feedback Notes</h4>
+          <p>Brief notes explaining why we made the choices we did, for your learning.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section">
+  <div class="pricing-container animate-on-scroll">
+    <div class="pricing-card">
+      <div class="pricing-badge">PROFESSIONAL REWRITE</div>
+      <h2>Book Description Rewrite</h2>
+      <p class="pricing-tagline">Everything your Amazon listing needs.</p>
+      <div class="price-display">$97<small> USD</small></div>
+      <p class="price-note">Per book, one-time payment</p>
+      <div class="free-badge">✦ FREE with any package ✦</div>
+      <ul class="pricing-features">
+        <li>Fully rewritten description (up to 400 words)</li>
+        <li>HTML formatted for Amazon</li>
+        <li>Hook-driven opening line</li>
+        <li>SEO keyword integration</li>
+        <li>One round of revisions</li>
+        <li>48 to 72 hour delivery</li>
+        <li>Personal feedback notes</li>
+      </ul>
+      <a href="#order-form" class="pricing-cta">Order Your Rewrite Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER FORM -->
+<section class="order-section" id="order-form">
+  <div class="order-container animate-on-scroll">
+    <div class="order-header">
+      <h2>Order Your Book Description Rewrite</h2>
+      <p>Fill out the form below and we will be in touch within 24 hours to confirm your order and begin work.</p>
+    </div>
+    <form class="order-form" action="https://formspree.io/f/xoeeynbp" method="POST">
+      <div>
+        <label for="order-name">Full Name *</label>
+        <input type="text" id="order-name" name="name" placeholder="Your full name" required>
+      </div>
+      <div>
+        <label for="order-email">Email Address *</label>
+        <input type="email" id="order-email" name="email" placeholder="your@email.com" required>
+      </div>
+      <div>
+        <label for="order-book">Book Title *</label>
+        <input type="text" id="order-book" name="book-title" placeholder="The title of your book" required>
+      </div>
+      <div>
+        <label for="order-genre">Genre *</label>
+        <select id="order-genre" name="genre" required>
+          <option value="" disabled selected>Select your genre</option>
+          <option value="fiction">Fiction</option>
+          <option value="non-fiction">Non-Fiction</option>
+          <option value="memoir">Memoir</option>
+          <option value="romance">Romance</option>
+          <option value="thriller">Thriller / Mystery</option>
+          <option value="sci-fi">Science Fiction / Fantasy</option>
+          <option value="literary">Literary Fiction</option>
+          <option value="self-help">Self Help</option>
+          <option value="business">Business</option>
+          <option value="childrens">Children's</option>
+          <option value="poetry">Poetry</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="full">
+        <label for="order-amazon">Amazon Link (if published)</label>
+        <input type="url" id="order-amazon" name="amazon-link" placeholder="https://amazon.com/your-book-link">
+      </div>
+      <div class="full">
+        <label for="order-current">Current Book Description *</label>
+        <textarea id="order-current" name="current-description" placeholder="Paste your current book description here. If you do not have one yet, briefly describe your book and its main themes." required></textarea>
+      </div>
+      <div class="full">
+        <label for="order-notes">Anything Else We Should Know?</label>
+        <textarea id="order-notes" name="additional-notes" placeholder="Share your target audience, comparable authors, tone preferences, or anything else that will help us craft the perfect description."></textarea>
+      </div>
+      <input type="hidden" name="subject" value="Book Description Rewrite Order">
+      <div class="order-submit">
+        <button type="submit">Submit My Order →</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="section-header animate-on-scroll">
+    <div class="section-tag">COMMON QUESTIONS</div>
+    <h2>Frequently Asked Questions</h2>
+    <p>Everything you need to know before ordering.</p>
+  </div>
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        <span>How long does the rewrite take?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Typical turnaround is 48 to 72 hours from the time we confirm your order. For urgent projects, rush delivery may be available. Just let us know in your order notes.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        <span>What if I do not love the first draft?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Your order includes one round of revisions at no additional cost. We want you to be fully satisfied with your new description before it goes live on Amazon.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        <span>Do you write for all genres?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Yes. We write for fiction, non-fiction, memoir, poetry, children's literature, business, self-help, and more. Every genre has its own voice, and we adapt accordingly.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        <span>Can I use the description on other platforms besides Amazon?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Absolutely. Your rewritten description is yours to use anywhere, including your website, Goodreads, Barnes & Noble, publisher marketing, and more.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        <span>Is it really free with a package?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Yes. Every one of our marketing packages (Seedling, Growth, Bestseller, and Custom) includes a complimentary book description rewrite as part of the service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>Fatihat Nifemi Literary Conduit</h3>
+      <p>Making literature visible, authors unforgettable, and stories impossible to overlook. A boutique book marketing studio based in New York City, serving authors worldwide.</p>
+      <div class="social-links">
+        <a href="https://x.com/fatihatnifemi" target="_blank" title="X">𝕏</a>
+        <a href="https://www.youtube.com/channel/UCA_GvgMJBUgQyBauFhbVDiA" target="_blank" title="YouTube">▶</a>
+        <a href="https://www.tiktok.com" target="_blank" title="TikTok">♪</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Book Launch Marketing</a></li>
+        <li><a href="services.html">Author Brand Building</a></li>
+        <li><a href="services.html">Social Media Marketing</a></li>
+        <li><a href="services.html">Email Marketing</a></li>
+        <li><a href="services.html">Amazon Optimization</a></li>
+        <li><a href="book-description.html">Book Description Rewrite</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get In Touch</h4>
+      <p>📍 New York City, USA</p>
+      <p>✉ hello.fatihatnifemii@gmail.com</p>
+      <p>Working with authors worldwide, serving the global literary community with care and precision.</p>
+    </div>
+  </div>
+  <div class="footer-quote">
+    <p>"Making literature visible, authors unforgettable, and stories impossible to overlook."</p>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Fatihat Nifemi Literary Conduit. All rights reserved.</p>
+    <div class="links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('active');
+  }
+  function toggleFaq(el) {
+    el.parentElement.classList.toggle('open');
+  }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

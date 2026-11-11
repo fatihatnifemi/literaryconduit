@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Fatihat Nifemi Literary Conduit, Book Marketer & Author Growth Strategist</title>
+<meta name="description" content="Meet Fatihat Nifemi, Book Marketer and Author Growth Strategist, and learn the story behind Fatihat Nifemi Literary Conduit, a boutique book marketing studio serving authors worldwide.">
+<meta name="keywords" content="Book Marketer, Book Marketing, Author Growth Strategist, Fatihat Nifemi, About, Literary Marketing">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --burgundy: #6B2737;
+    --gold: #C9A961;
+    --ivory: #F5F0E8;
+    --charcoal: #1C1C1C;
+    --emerald: #0F3D2E;
+    --cream: #FFF9F0;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: Georgia, serif;
+    background: var(--cream);
+    color: var(--charcoal);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 { font-family: 'Bree Serif', Georgia, serif; font-weight: normal; }
+
+  /* NAVBAR */
+  .navbar {
+    position: fixed; top: 0; left: 0; right: 0;
+    background: rgba(255, 249, 240, 0.97);
+    backdrop-filter: blur(10px);
+    padding: 15px 5%;
+    display: flex; justify-content: space-between; align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(107, 39, 55, 0.08);
+  }
+  .nav-left { display: flex; align-items: center; gap: 12px; }
+  .nav-left img {
+    width: 45px; height: 45px; border-radius: 50%;
+    object-fit: cover; border: 2px solid var(--gold);
+  }
+  .logo-text {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.1rem; color: var(--burgundy); line-height: 1.1;
+  }
+  .logo-text span { display: block; font-size: 0.7rem; color: var(--emerald); letter-spacing: 2px; }
+  .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+  .nav-links a {
+    text-decoration: none; color: var(--charcoal);
+    font-family: 'Bree Serif', serif; font-size: 0.95rem;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--burgundy); }
+  .nav-links a.active { color: var(--burgundy); border-bottom: 2px solid var(--gold); }
+  .btn-outline-nav {
+    padding: 8px 20px; border: 2px solid var(--burgundy);
+    border-radius: 30px; color: var(--burgundy) !important;
+    transition: all 0.3s;
+  }
+  .btn-outline-nav:hover { background: var(--burgundy); color: var(--cream) !important; }
+  .btn-fill-nav {
+    padding: 8px 22px;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    border-radius: 30px; color: var(--cream) !important;
+    transition: all 0.3s;
+  }
+  .btn-fill-nav:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(107, 39, 55, 0.3); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 28px; height: 3px; background: var(--burgundy); border-radius: 2px; transition: 0.3s; }
+
+  /* HERO */
+  .hero {
+    margin-top: 80px;
+    padding: 100px 5% 80px;
+    background: linear-gradient(135deg, var(--burgundy) 0%, var(--emerald) 100%);
+    color: var(--cream);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(201, 169, 97, 0.15), transparent 50%);
+  }
+  .hero-content { position: relative; z-index: 2; max-width: 900px; margin: 0 auto; }
+  .hero-tag {
+    display: inline-block; padding: 8px 20px;
+    background: rgba(201, 169, 97, 0.2); border: 1px solid var(--gold);
+    border-radius: 30px; color: var(--gold);
+    font-family: 'Bree Serif', serif; font-size: 0.85rem;
+    letter-spacing: 2px; margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: 3.5rem; margin-bottom: 20px; color: var(--cream);
+    line-height: 1.1;
+  }
+  .hero h1 span { color: var(--gold); font-style: italic; }
+  .hero p {
+    font-size: 1.2rem; max-width: 700px; margin: 0 auto;
+    color: rgba(245, 240, 232, 0.9);
+  }
+
+  /* FOUNDER SECTION */
+  .founder-section {
+    padding: 100px 5%;
+    background: var(--cream);
+  }
+  .founder-container {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1.3fr; gap: 60px; align-items: center;
+  }
+  .founder-image {
+    position: relative;
+  }
+  .founder-image img {
+    width: 100%; border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(107, 39, 55, 0.2);
+  }
+  .founder-image::before {
+    content: '';
+    position: absolute; top: -20px; left: -20px;
+    width: 100%; height: 100%;
+    border: 3px solid var(--gold);
+    border-radius: 15px; z-index: -1;
+  }
+  .founder-text .tag {
+    display: inline-block; padding: 6px 18px;
+    background: var(--burgundy); color: var(--gold);
+    font-family: 'Bree Serif', serif; font-size: 0.8rem;
+    letter-spacing: 2px; border-radius: 20px; margin-bottom: 15px;
+  }
+  .founder-text h2 {
+    font-size: 2.5rem; color: var(--burgundy); margin-bottom: 15px; line-height: 1.2;
+  }
+  .founder-title {
+    font-family: 'Bree Serif', serif; color: var(--emerald);
+    font-size: 1.1rem; margin-bottom: 25px; font-style: italic;
+  }
+  .founder-text p {
+    color: var(--charcoal); margin-bottom: 18px; font-size: 1.05rem;
+  }
+
+  /* STORY SECTION */
+  .story-section {
+    padding: 100px 5%;
+    background: var(--ivory);
+  }
+  .section-header { text-align: center; max-width: 800px; margin: 0 auto 60px; }
+  .section-tag {
+    display: inline-block; padding: 6px 18px;
+    background: var(--burgundy); color: var(--gold);
+    font-family: 'Bree Serif', serif; font-size: 0.8rem;
+    letter-spacing: 2px; border-radius: 20px; margin-bottom: 15px;
+  }
+  .section-header h2 { font-size: 2.5rem; color: var(--burgundy); margin-bottom: 15px; }
+  .section-header p { font-size: 1.1rem; color: var(--charcoal); }
+
+  .story-container {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 1.3fr 1fr; gap: 60px; align-items: center;
+  }
+  .story-text p {
+    color: var(--charcoal); margin-bottom: 20px; font-size: 1.05rem;
+  }
+  .story-text .pull-quote {
+    font-family: 'Bree Serif', serif; font-size: 1.3rem;
+    color: var(--emerald); font-style: italic;
+    padding: 25px; border-left: 4px solid var(--gold);
+    background: var(--cream); margin: 30px 0;
+  }
+  .story-image img {
+    width: 100%; border-radius: 15px;
+    box-shadow: 0 20px 45px rgba(107, 39, 55, 0.15);
+  }
+
+  /* VALUES */
+  .values-section {
+    padding: 100px 5%;
+    background: var(--cream);
+  }
+  .values-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px; max-width: 1300px; margin: 0 auto;
+  }
+  .value-card {
+    background: var(--ivory); padding: 40px 30px;
+    border-radius: 15px; text-align: center;
+    border-top: 4px solid var(--gold);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(107, 39, 55, 0.12);
+  }
+  .value-icon {
+    width: 70px; height: 70px; margin: 0 auto 20px;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-family: 'Bree Serif', serif; font-size: 1.8rem; color: var(--gold);
+  }
+  .value-card h3 { color: var(--burgundy); font-size: 1.35rem; margin-bottom: 12px; }
+  .value-card p { color: var(--charcoal); font-size: 0.98rem; }
+
+  /* APPROACH SECTION */
+  .approach-section {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    color: var(--cream);
+  }
+  .approach-container { max-width: 1200px; margin: 0 auto; }
+  .approach-header { text-align: center; margin-bottom: 60px; }
+  .approach-header .tag {
+    display: inline-block; padding: 6px 18px;
+    background: rgba(201, 169, 97, 0.2); border: 1px solid var(--gold);
+    color: var(--gold);
+    font-family: 'Bree Serif', serif; font-size: 0.8rem;
+    letter-spacing: 2px; border-radius: 20px; margin-bottom: 15px;
+  }
+  .approach-header h2 { font-size: 2.5rem; color: var(--gold); margin-bottom: 15px; }
+  .approach-header p { font-size: 1.1rem; color: rgba(245, 240, 232, 0.92); max-width: 700px; margin: 0 auto; }
+
+  .approach-list {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  .approach-item {
+    background: rgba(201, 169, 97, 0.08);
+    border: 1px solid rgba(201, 169, 97, 0.2);
+    padding: 30px; border-radius: 12px;
+    transition: all 0.3s;
+  }
+  .approach-item:hover {
+    background: rgba(201, 169, 97, 0.15);
+    transform: translateY(-5px);
+  }
+  .approach-number {
+    font-family: 'Bree Serif', serif; color: var(--gold);
+    font-size: 2rem; margin-bottom: 10px;
+  }
+  .approach-item h3 { color: var(--cream); margin-bottom: 10px; font-size: 1.25rem; }
+  .approach-item p { color: rgba(245, 240, 232, 0.88); font-size: 0.98rem; }
+
+  /* MISSION VISION */
+  .mv-section {
+    padding: 100px 5%;
+    background: var(--ivory);
+  }
+  .mv-grid {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+  }
+  .mv-card {
+    background: var(--cream); padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(107, 39, 55, 0.08);
+    border-top: 5px solid var(--gold);
+    transition: transform 0.3s;
+  }
+  .mv-card:hover { transform: translateY(-8px); }
+  .mv-card h3 {
+    font-size: 1.8rem; color: var(--burgundy);
+    margin-bottom: 20px;
+  }
+  .mv-card p { color: var(--charcoal); font-size: 1.05rem; }
+
+  /* CTA */
+  .cta-section {
+    padding: 100px 5%;
+    background: var(--cream);
+    text-align: center;
+  }
+  .cta-content { max-width: 800px; margin: 0 auto; }
+  .cta-content h2 { font-size: 2.7rem; color: var(--burgundy); margin-bottom: 20px; }
+  .cta-content p { font-size: 1.15rem; color: var(--charcoal); margin-bottom: 35px; }
+  .cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    padding: 15px 35px;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    color: var(--cream); text-decoration: none;
+    font-family: 'Bree Serif', serif; font-size: 1rem;
+    border-radius: 30px; transition: all 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .btn-primary::before {
+    content: ''; position: absolute; top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+  }
+  .btn-primary:hover::before { left: 100%; }
+  .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(107, 39, 55, 0.35); }
+  .btn-secondary {
+    padding: 15px 35px;
+    background: transparent;
+    color: var(--burgundy); text-decoration: none;
+    font-family: 'Bree Serif', serif; font-size: 1rem;
+    border-radius: 30px; border: 2px solid var(--burgundy);
+    transition: all 0.3s;
+  }
+  .btn-secondary:hover { background: var(--burgundy); color: var(--cream); transform: translateY(-3px); }
+
+  /* FOOTER */
+  footer { background: var(--charcoal); color: var(--ivory); padding: 70px 5% 0; }
+  .footer-grid {
+    max-width: 1300px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 50px; padding-bottom: 50px;
+  }
+  .footer-brand h3 { color: var(--gold); font-size: 1.4rem; margin-bottom: 15px; font-family: 'Bree Serif', serif; }
+  .footer-brand p { color: rgba(245, 240, 232, 0.8); margin-bottom: 20px; font-size: 0.95rem; }
+  .social-links { display: flex; gap: 15px; }
+  .social-links a {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--burgundy); color: var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none; transition: all 0.3s;
+    font-family: 'Bree Serif', serif;
+  }
+  .social-links a:hover { background: var(--gold); color: var(--burgundy); transform: translateY(-3px); }
+  .footer-col h4 { color: var(--gold); margin-bottom: 18px; font-size: 1.1rem; font-family: 'Bree Serif', serif; }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 10px; }
+  .footer-col ul li a { color: rgba(245, 240, 232, 0.8); text-decoration: none; font-size: 0.95rem; transition: color 0.3s; }
+  .footer-col ul li a:hover { color: var(--gold); }
+  .footer-col p { color: rgba(245, 240, 232, 0.8); font-size: 0.95rem; margin-bottom: 10px; }
+  .footer-quote {
+    border-top: 1px solid rgba(201, 169, 97, 0.2);
+    border-bottom: 1px solid rgba(201, 169, 97, 0.2);
+    padding: 25px 0; text-align: center;
+    max-width: 1300px; margin: 0 auto;
+  }
+  .footer-quote p { font-style: italic; color: var(--gold); font-size: 1.05rem; font-family: 'Bree Serif', serif; }
+  .footer-bottom {
+    max-width: 1300px; margin: 0 auto; padding: 25px 0;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px;
+  }
+  .footer-bottom p { color: rgba(245, 240, 232, 0.7); font-size: 0.9rem; }
+  .footer-bottom .links a {
+    color: rgba(245, 240, 232, 0.7); text-decoration: none; margin-left: 20px; font-size: 0.9rem;
+  }
+  .footer-bottom .links a:hover { color: var(--gold); }
+
+  /* ANIMATIONS */
+  .animate-on-scroll { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+  .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+  .animate-left { opacity: 0; transform: translateX(-40px); transition: all 0.8s ease; }
+  .animate-left.visible { opacity: 1; transform: translateX(0); }
+  .animate-right { opacity: 0; transform: translateX(40px); transition: all 0.8s ease; }
+  .animate-right.visible { opacity: 1; transform: translateX(0); }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .hamburger { display: flex; }
+    .nav-links {
+      position: fixed; top: 75px; right: -100%; width: 75%; height: 100vh;
+      background: var(--cream); flex-direction: column; padding: 40px 25px;
+      transition: right 0.4s; box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+    }
+    .nav-links.active { right: 0; }
+    .hero h1 { font-size: 2.3rem; }
+    .founder-container, .story-container, .mv-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 35px; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .footer-bottom .links a { margin: 0 10px; }
+  }
+  @media (max-width: 500px) {
+    .hero { padding: 70px 5% 60px; }
+    .hero h1 { font-size: 1.9rem; }
+    .section-header h2, .founder-text h2, .approach-header h2, .cta-content h2 { font-size: 1.8rem; }
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="founder.png" alt="Fatihat Nifemi, Book Marketer">
+    <div class="logo-text">
+      Fatihat Nifemi
+      <span>LITERARY CONDUIT</span>
+    </div>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="packages.html">Packages</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="book-description.html">Book Description</a></li>
+    <li><a href="free-guide.html" class="btn-outline-nav">Free Guide</a></li>
+    <li><a href="contact.html" class="btn-fill-nav">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">OUR STORY</div>
+    <h1>The <span>Conduit</span> Between Authors and Their Readers</h1>
+    <p>A boutique book marketing studio built on literary love, strategic precision, and an unwavering belief that every great book deserves to be found.</p>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="founder-section">
+  <div class="founder-container">
+    <div class="founder-image animate-left">
+      <img src="founder.png" alt="Fatihat Nifemi, Founder and Book Marketing Strategist">
+    </div>
+    <div class="founder-text animate-right">
+      <div class="tag">MEET THE FOUNDER</div>
+      <h2>Fatihat Nifemi</h2>
+      <p class="founder-title">Founder & Literary Marketing Strategist</p>
+      <p>Fatihat Nifemi is a Book Marketer and Author Growth Strategist with a deep love for literature and an equally deep belief in the power of intentional marketing to change an author's career.</p>
+      <p>Based in New York City and working with authors worldwide, Fatihat founded Fatihat Nifemi Literary Conduit as a response to a quiet frustration she kept seeing in publishing: beautiful books, passionate authors, and brilliant stories that never reached the readers who would have loved them most.</p>
+      <p>Her approach is rooted in the understanding that marketing a book is never just about selling copies. It is about building a bridge, a conduit, between the author's vision and the reader's hunger. Every strategy she designs is bespoke, thoughtful, and committed to honoring both sides of that bridge.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story-section">
+  <div class="section-header animate-on-scroll">
+    <div class="section-tag">OUR JOURNEY</div>
+    <h2>Why We Exist</h2>
+    <p>The story behind Fatihat Nifemi Literary Conduit and the authors we serve.</p>
+  </div>
+  <div class="story-container">
+    <div class="story-text animate-left">
+      <p>Fatihat Nifemi Literary Conduit was born from a simple observation and a stubborn conviction. The observation: that too many extraordinary books go unseen, not because they lack merit, but because they lack visibility. The conviction: that this is a solvable problem.</p>
+      <p>In a publishing world where authors are increasingly expected to be their own marketers, publicists, and brand managers, we exist to carry that weight alongside them. We are the strategic partner authors wish they had sooner, the ones who understand both the craft and the commerce, the story and the strategy.</p>
+      <div class="pull-quote">
+        "Every book has a reader waiting for it. Our work is to make sure they find each other."
+      </div>
+      <p>From our studio base in New York City, we work with authors across genres, geographies, and career stages. Debut novelists building their first readership. Established authors scaling their platforms. Non-fiction experts turning their books into movements. What unites them is a commitment to their work and a readiness for their work to be seen.</p>
+      <p>We are small by design. Boutique by philosophy. Personal by promise. Because the authors we serve deserve more than a transaction. They deserve a true literary conduit.</p>
+    </div>
+    <div class="story-image animate-right">
+      <img src="about-story.png" alt="The story of Fatihat Nifemi Literary Conduit">
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values-section">
+  <div class="section-header animate-on-scroll">
+    <div class="section-tag">OUR VALUES</div>
+    <h2>What We Stand For</h2>
+    <p>The principles that shape every strategy, every conversation, and every campaign.</p>
+  </div>
+  <div class="values-grid">
+    <div class="value-card animate-on-scroll">
+      <div class="value-icon">✦</div>
+      <h3>Literary First</h3>
+      <p>We are rooted in the craft of writing. Every strategy respects the artistry of the work before pursuing its reach.</p>
+    </div>
+    <div class="value-card animate-on-scroll">
+      <div class="value-icon">◈</div>
+      <h3>Bespoke Always</h3>
+      <p>No templates. No generic playbooks. Every author receives a strategy designed for their book, their voice, their goals.</p>
+    </div>
+    <div class="value-card animate-on-scroll">
+      <div class="value-icon">❖</div>
+      <h3>Honest Partnership</h3>
+      <p>We tell the truth, even when it is hard. Real partnership means real conversations about what works and what does not.</p>
+    </div>
+    <div class="value-card animate-on-scroll">
+      <div class="value-icon">✺</div>
+      <h3>Long-Term Vision</h3>
+      <p>We are not here for one launch. We are here to help authors build careers, readerships, and legacies that last.</p>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="approach-section">
+  <div class="approach-container">
+    <div class="approach-header">
+      <div class="tag">OUR APPROACH</div>
+      <h2>How We Think About Book Marketing</h2>
+      <p>Our philosophy shapes everything we do, from the first discovery call to the final campaign review.</p>
+    </div>
+    <div class="approach-list">
+      <div class="approach-item animate-on-scroll">
+        <div class="approach-number">01</div>
+        <h3>Strategy Before Tactics</h3>
+        <p>We never start with a to-do list. We start with questions. Who is this book for? What does success look like? What is the long game? Only then do we build the plan.</p>
+      </div>
+      <div class="approach-item animate-on-scroll">
+        <div class="approach-number">02</div>
+        <h3>Voice Above All</h3>
+        <p>Every author has a distinctive voice. Our job is to amplify it, never to flatten it into something generic. Your marketing should sound like you, not like us.</p>
+      </div>
+      <div class="approach-item animate-on-scroll">
+        <div class="approach-number">03</div>
+        <h3>Readers Are People</h3>
+        <p>We never think of readers as traffic, leads, or conversions. They are people with limited time, specific tastes, and real emotional lives. We market with that respect at the center.</p>
+      </div>
+      <div class="approach-item animate-on-scroll">
+        <div class="approach-number">04</div>
+        <h3>Patience Is Strategy</h3>
+        <p>Great author careers are built over years, not weeks. We design strategies that compound over time, not ones that burn bright and fade fast.</p>
+      </div>
+      <div class="approach-item animate-on-scroll">
+        <div class="approach-number">05</div>
+        <h3>Data Serves Story</h3>
+        <p>We use data, metrics, and analytics rigorously. But data is a tool, not a boss. The story of your book and your career always leads.</p>
+      </div>
+      <div class="approach-item animate-on-scroll">
+        <div class="approach-number">06</div>
+        <h3>Craft Deserves Respect</h3>
+        <p>You spent months or years writing this book. We treat that time with the reverence it deserves, bringing the same care to your marketing that you brought to your pages.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION VISION -->
+<section class="mv-section">
+  <div class="mv-grid">
+    <div class="mv-card animate-left">
+      <h3>Our Mission</h3>
+      <p>To make literature visible, authors unforgettable, and stories impossible to overlook. We partner with writers to build the visibility, readership, and brand their work deserves, through strategy rooted in literary respect and marketing precision.</p>
+    </div>
+    <div class="mv-card animate-right">
+      <h3>Our Vision</h3>
+      <p>A publishing world where no great book goes unseen for lack of marketing. Where every author, regardless of publisher, platform, or starting point, has access to thoughtful, strategic support that honors both their craft and their career.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-content animate-on-scroll">
+    <h2>Let's Build Something Lasting</h2>
+    <p>If our story resonates with yours, we would love to hear about your book, your goals, and your vision as an author.</p>
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn-primary">Start the Conversation</a>
+      <a href="services.html" class="btn-secondary">Explore Our Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>Fatihat Nifemi Literary Conduit</h3>
+      <p>Making literature visible, authors unforgettable, and stories impossible to overlook. A boutique book marketing studio based in New York City, serving authors worldwide.</p>
+      <div class="social-links">
+        <a href="https://x.com/fatihatnifemi" target="_blank" title="X">𝕏</a>
+        <a href="https://www.youtube.com/channel/UCA_GvgMJBUgQyBauFhbVDiA" target="_blank" title="YouTube">▶</a>
+        <a href="https://www.tiktok.com" target="_blank" title="TikTok">♪</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Book Launch Marketing</a></li>
+        <li><a href="services.html">Author Brand Building</a></li>
+        <li><a href="services.html">Social Media Marketing</a></li>
+        <li><a href="services.html">Email Marketing</a></li>
+        <li><a href="services.html">Amazon Optimization</a></li>
+        <li><a href="book-description.html">Book Description Rewrite</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get In Touch</h4>
+      <p>📍 New York City, USA</p>
+      <p>✉ hello.fatihatnifemii@gmail.com</p>
+      <p>Working with authors worldwide, serving the global literary community with care and precision.</p>
+    </div>
+  </div>
+  <div class="footer-quote">
+    <p>"Making literature visible, authors unforgettable, and stories impossible to overlook."</p>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Fatihat Nifemi Literary Conduit. All rights reserved.</p>
+    <div class="links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('active');
+  }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.animate-on-scroll, .animate-left, .animate-right').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

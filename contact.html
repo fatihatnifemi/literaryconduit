@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Fatihat Nifemi Literary Conduit, Get in Touch with a Book Marketer</title>
+<meta name="description" content="Contact Fatihat Nifemi Literary Conduit to discuss your book marketing needs. Book a free discovery call with a professional Book Marketer and Author Growth Strategist based in New York City.">
+<meta name="keywords" content="Contact Book Marketer, Book Marketing Consultation, Author Growth Strategist, Book Marketing New York, Literary Marketing Contact">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --burgundy: #6B2737;
+    --gold: #C9A961;
+    --ivory: #F5F0E8;
+    --charcoal: #1C1C1C;
+    --emerald: #0F3D2E;
+    --cream: #FFF9F0;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: Georgia, serif;
+    background: var(--cream);
+    color: var(--charcoal);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 { font-family: 'Bree Serif', Georgia, serif; font-weight: normal; }
+
+  /* NAVBAR */
+  .navbar {
+    position: fixed; top: 0; left: 0; right: 0;
+    background: rgba(255, 249, 240, 0.97);
+    backdrop-filter: blur(10px);
+    padding: 15px 5%;
+    display: flex; justify-content: space-between; align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(107, 39, 55, 0.08);
+  }
+  .nav-left { display: flex; align-items: center; gap: 12px; }
+  .nav-left img {
+    width: 45px; height: 45px; border-radius: 50%;
+    object-fit: cover; border: 2px solid var(--gold);
+  }
+  .logo-text {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.1rem; color: var(--burgundy); line-height: 1.1;
+  }
+  .logo-text span { display: block; font-size: 0.7rem; color: var(--emerald); letter-spacing: 2px; }
+  .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+  .nav-links a {
+    text-decoration: none; color: var(--charcoal);
+    font-family: 'Bree Serif', serif; font-size: 0.95rem;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--burgundy); }
+  .nav-links a.active { color: var(--burgundy); border-bottom: 2px solid var(--gold); }
+  .btn-outline-nav {
+    padding: 8px 20px; border: 2px solid var(--burgundy);
+    border-radius: 30px; color: var(--burgundy) !important;
+    transition: all 0.3s;
+  }
+  .btn-outline-nav:hover { background: var(--burgundy); color: var(--cream) !important; }
+  .btn-fill-nav {
+    padding: 8px 22px;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    border-radius: 30px; color: var(--cream) !important;
+    transition: all 0.3s;
+  }
+  .btn-fill-nav:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(107, 39, 55, 0.3); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 28px; height: 3px; background: var(--burgundy); border-radius: 2px; transition: 0.3s; }
+
+  /* HERO */
+  .hero {
+    margin-top: 80px;
+    padding: 100px 5% 80px;
+    background: linear-gradient(135deg, var(--burgundy) 0%, var(--emerald) 100%);
+    color: var(--cream);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(201, 169, 97, 0.15), transparent 50%);
+  }
+  .hero-content { position: relative; z-index: 2; max-width: 900px; margin: 0 auto; }
+  .hero-tag {
+    display: inline-block; padding: 8px 20px;
+    background: rgba(201, 169, 97, 0.2); border: 1px solid var(--gold);
+    border-radius: 30px; color: var(--gold);
+    font-family: 'Bree Serif', serif; font-size: 0.85rem;
+    letter-spacing: 2px; margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: 3.5rem; margin-bottom: 20px; color: var(--cream);
+    line-height: 1.1;
+  }
+  .hero h1 span { color: var(--gold); font-style: italic; }
+  .hero p {
+    font-size: 1.2rem; max-width: 700px; margin: 0 auto;
+    color: rgba(245, 240, 232, 0.9);
+  }
+
+  /* CONTACT SECTION */
+  .contact-section {
+    padding: 80px 5%;
+    background: var(--cream);
+  }
+  .contact-container {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1.4fr; gap: 60px;
+  }
+
+  /* INFO SIDE */
+  .contact-info { padding-top: 20px; }
+  .contact-info .tag {
+    display: inline-block; padding: 6px 18px;
+    background: var(--burgundy); color: var(--gold);
+    font-family: 'Bree Serif', serif; font-size: 0.8rem;
+    letter-spacing: 2px; border-radius: 20px; margin-bottom: 15px;
+  }
+  .contact-info h2 {
+    font-size: 2.3rem; color: var(--burgundy); margin-bottom: 20px; line-height: 1.2;
+  }
+  .contact-info > p {
+    color: var(--charcoal); margin-bottom: 30px; font-size: 1.05rem;
+  }
+  .info-cards { display: flex; flex-direction: column; gap: 20px; }
+  .info-card {
+    display: flex; gap: 18px; align-items: flex-start;
+    padding: 22px; background: var(--ivory);
+    border-radius: 12px; border-left: 4px solid var(--gold);
+    transition: transform 0.3s;
+  }
+  .info-card:hover { transform: translateX(5px); }
+  .info-icon {
+    width: 50px; height: 50px; min-width: 50px;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    color: var(--gold); font-size: 1.3rem;
+  }
+  .info-card h4 { color: var(--burgundy); font-size: 1.1rem; margin-bottom: 5px; }
+  .info-card p { color: var(--charcoal); font-size: 0.95rem; }
+  .info-card a { color: var(--emerald); text-decoration: none; transition: color 0.3s; }
+  .info-card a:hover { color: var(--burgundy); }
+
+  .social-contact {
+    margin-top: 35px; padding: 25px;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    border-radius: 12px; color: var(--cream);
+  }
+  .social-contact h4 {
+    color: var(--gold); margin-bottom: 12px; font-size: 1.1rem;
+  }
+  .social-contact p { color: rgba(245, 240, 232, 0.9); margin-bottom: 15px; font-size: 0.95rem; }
+  .social-contact-links { display: flex; gap: 12px; }
+  .social-contact-links a {
+    width: 42px; height: 42px; border-radius: 50%;
+    background: rgba(201, 169, 97, 0.2); border: 1px solid var(--gold);
+    color: var(--gold); display: flex; align-items: center; justify-content: center;
+    text-decoration: none; font-family: 'Bree Serif', serif;
+    transition: all 0.3s;
+  }
+  .social-contact-links a:hover { background: var(--gold); color: var(--burgundy); transform: translateY(-3px); }
+
+  /* FORM SIDE */
+  .contact-form-wrapper {
+    background: var(--ivory); border-radius: 20px;
+    padding: 45px; box-shadow: 0 15px 45px rgba(107, 39, 55, 0.1);
+  }
+  .form-header { margin-bottom: 30px; }
+  .form-header h3 {
+    font-size: 1.8rem; color: var(--burgundy); margin-bottom: 8px;
+  }
+  .form-header p { color: var(--charcoal); font-size: 0.98rem; }
+  .form-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+  }
+  .form-group { display: flex; flex-direction: column; }
+  .form-group.full { grid-column: 1 / -1; }
+  .form-group label {
+    font-family: 'Bree Serif', serif; color: var(--burgundy);
+    font-size: 0.95rem; margin-bottom: 8px;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 14px 18px;
+    border: 2px solid rgba(201, 169, 97, 0.3);
+    border-radius: 10px; background: var(--cream);
+    color: var(--charcoal); font-family: Georgia, serif;
+    font-size: 1rem; outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--burgundy);
+    box-shadow: 0 0 0 3px rgba(107, 39, 55, 0.1);
+  }
+  .form-group textarea { resize: vertical; min-height: 140px; }
+  .form-group select { cursor: pointer; appearance: auto; }
+  .form-submit {
+    grid-column: 1 / -1; margin-top: 10px;
+  }
+  .form-submit button {
+    width: 100%; padding: 16px;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    color: var(--cream); border: none;
+    font-family: 'Bree Serif', serif; font-size: 1.1rem;
+    border-radius: 30px; cursor: pointer; transition: all 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .form-submit button::before {
+    content: ''; position: absolute; top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+  }
+  .form-submit button:hover::before { left: 100%; }
+  .form-submit button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(107, 39, 55, 0.35);
+  }
+  .form-note {
+    grid-column: 1 / -1; text-align: center;
+    color: var(--emerald); font-size: 0.85rem; font-style: italic;
+    margin-top: 5px;
+  }
+
+  /* WHAT TO EXPECT */
+  .expect-section {
+    padding: 80px 5%;
+    background: var(--ivory);
+  }
+  .section-header { text-align: center; max-width: 800px; margin: 0 auto 60px; }
+  .section-tag {
+    display: inline-block; padding: 6px 18px;
+    background: var(--burgundy); color: var(--gold);
+    font-family: 'Bree Serif', serif; font-size: 0.8rem;
+    letter-spacing: 2px; border-radius: 20px; margin-bottom: 15px;
+  }
+  .section-header h2 { font-size: 2.5rem; color: var(--burgundy); margin-bottom: 15px; }
+  .section-header p { font-size: 1.1rem; color: var(--charcoal); }
+
+  .expect-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px; max-width: 1200px; margin: 0 auto;
+  }
+  .expect-card {
+    background: var(--cream); padding: 35px 30px;
+    border-radius: 15px; text-align: center;
+    border-top: 4px solid var(--gold);
+    transition: transform 0.3s;
+  }
+  .expect-card:hover { transform: translateY(-8px); }
+  .expect-number {
+    width: 55px; height: 55px; margin: 0 auto 18px;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    color: var(--gold); font-family: 'Bree Serif', serif;
+    font-size: 1.4rem; display: flex; align-items: center; justify-content: center;
+    border-radius: 50%;
+  }
+  .expect-card h3 { color: var(--burgundy); font-size: 1.25rem; margin-bottom: 10px; }
+  .expect-card p { color: var(--charcoal); font-size: 0.95rem; }
+
+  /* FAQ */
+  .faq-section {
+    padding: 80px 5%;
+    background: var(--cream);
+  }
+  .faq-container { max-width: 850px; margin: 0 auto; }
+  .faq-item {
+    background: var(--ivory); border-radius: 12px;
+    margin-bottom: 15px; overflow: hidden;
+    border-left: 4px solid var(--gold);
+    transition: box-shadow 0.3s;
+  }
+  .faq-item:hover { box-shadow: 0 8px 25px rgba(107, 39, 55, 0.1); }
+  .faq-question {
+    padding: 20px 25px; cursor: pointer;
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: 'Bree Serif', serif; color: var(--burgundy);
+    font-size: 1.1rem;
+  }
+  .faq-toggle { color: var(--gold); font-size: 1.5rem; transition: transform 0.3s; }
+  .faq-item.open .faq-toggle { transform: rotate(45deg); }
+  .faq-answer {
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.4s ease; padding: 0 25px;
+  }
+  .faq-item.open .faq-answer { max-height: 500px; padding: 0 25px 20px; }
+  .faq-answer p { color: var(--charcoal); font-size: 0.98rem; }
+
+  /* CTA */
+  .cta-section {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    color: var(--cream);
+    text-align: center;
+  }
+  .cta-content { max-width: 800px; margin: 0 auto; }
+  .cta-content h2 { font-size: 2.7rem; color: var(--gold); margin-bottom: 20px; }
+  .cta-content p { font-size: 1.15rem; color: rgba(245, 240, 232, 0.92); margin-bottom: 35px; }
+  .cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+  .btn-gold {
+    padding: 15px 35px;
+    background: linear-gradient(135deg, var(--gold), #d4b876);
+    color: var(--burgundy); text-decoration: none;
+    font-family: 'Bree Serif', serif; font-size: 1rem;
+    border-radius: 30px; transition: all 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .btn-gold::before {
+    content: ''; position: absolute; top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s;
+  }
+  .btn-gold:hover::before { left: 100%; }
+  .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(201, 169, 97, 0.4); }
+  .btn-outline-light {
+    padding: 15px 35px;
+    background: transparent; border: 2px solid var(--cream);
+    color: var(--cream); text-decoration: none;
+    font-family: 'Bree Serif', serif; font-size: 1rem;
+    border-radius: 30px; transition: all 0.3s;
+  }
+  .btn-outline-light:hover { background: var(--cream); color: var(--burgundy); transform: translateY(-3px); }
+
+  /* FOOTER */
+  footer { background: var(--charcoal); color: var(--ivory); padding: 70px 5% 0; }
+  .footer-grid {
+    max-width: 1300px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 50px; padding-bottom: 50px;
+  }
+  .footer-brand h3 { color: var(--gold); font-size: 1.4rem; margin-bottom: 15px; font-family: 'Bree Serif', serif; }
+  .footer-brand p { color: rgba(245, 240, 232, 0.8); margin-bottom: 20px; font-size: 0.95rem; }
+  .social-links { display: flex; gap: 15px; }
+  .social-links a {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--burgundy); color: var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none; transition: all 0.3s;
+    font-family: 'Bree Serif', serif;
+  }
+  .social-links a:hover { background: var(--gold); color: var(--burgundy); transform: translateY(-3px); }
+  .footer-col h4 { color: var(--gold); margin-bottom: 18px; font-size: 1.1rem; font-family: 'Bree Serif', serif; }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 10px; }
+  .footer-col ul li a { color: rgba(245, 240, 232, 0.8); text-decoration: none; font-size: 0.95rem; transition: color 0.3s; }
+  .footer-col ul li a:hover { color: var(--gold); }
+  .footer-col p { color: rgba(245, 240, 232, 0.8); font-size: 0.95rem; margin-bottom: 10px; }
+  .footer-quote {
+    border-top: 1px solid rgba(201, 169, 97, 0.2);
+    border-bottom: 1px solid rgba(201, 169, 97, 0.2);
+    padding: 25px 0; text-align: center;
+    max-width: 1300px; margin: 0 auto;
+  }
+  .footer-quote p { font-style: italic; color: var(--gold); font-size: 1.05rem; font-family: 'Bree Serif', serif; }
+  .footer-bottom {
+    max-width: 1300px; margin: 0 auto; padding: 25px 0;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px;
+  }
+  .footer-bottom p { color: rgba(245, 240, 232, 0.7); font-size: 0.9rem; }
+  .footer-bottom .links a {
+    color: rgba(245, 240, 232, 0.7); text-decoration: none; margin-left: 20px; font-size: 0.9rem;
+  }
+  .footer-bottom .links a:hover { color: var(--gold); }
+
+  /* ANIMATIONS */
+  .animate-on-scroll { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+  .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+  .animate-left { opacity: 0; transform: translateX(-40px); transition: all 0.8s ease; }
+  .animate-left.visible { opacity: 1; transform: translateX(0); }
+  .animate-right { opacity: 0; transform: translateX(40px); transition: all 0.8s ease; }
+  .animate-right.visible { opacity: 1; transform: translateX(0); }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .hamburger { display: flex; }
+    .nav-links {
+      position: fixed; top: 75px; right: -100%; width: 75%; height: 100vh;
+      background: var(--cream); flex-direction: column; padding: 40px 25px;
+      transition: right 0.4s; box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+    }
+    .nav-links.active { right: 0; }
+    .hero h1 { font-size: 2.3rem; }
+    .contact-container { grid-template-columns: 1fr; }
+    .form-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 35px; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .footer-bottom .links a { margin: 0 10px; }
+  }
+  @media (max-width: 500px) {
+    .hero { padding: 70px 5% 60px; }
+    .hero h1 { font-size: 1.9rem; }
+    .section-header h2, .contact-info h2, .cta-content h2 { font-size: 1.8rem; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .contact-form-wrapper { padding: 30px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="founder.png" alt="Fatihat Nifemi, Book Marketer">
+    <div class="logo-text">
+      Fatihat Nifemi
+      <span>LITERARY CONDUIT</span>
+    </div>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="packages.html">Packages</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="book-description.html">Book Description</a></li>
+    <li><a href="free-guide.html" class="btn-outline-nav">Free Guide</a></li>
+    <li><a href="contact.html" class="btn-fill-nav">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">GET IN TOUCH</div>
+    <h1>Let's Talk About <span>Your Book</span></h1>
+    <p>Every great partnership starts with a conversation. Tell us about your book, your goals, and your vision, and we will get back to you within 48 hours.</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  <div class="contact-container">
+
+    <!-- INFO -->
+    <div class="contact-info animate-left">
+      <div class="tag">REACH OUT</div>
+      <h2>We Would Love to Hear From You</h2>
+      <p>Whether you have a specific question, a book launch on the horizon, or simply want to explore what professional book marketing could look like for you, we are here. Fill out the form or reach out directly through any of the channels below.</p>
+
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="info-icon">✉</div>
+          <div>
+            <h4>Email Us</h4>
+            <p><a href="mailto:hello.fatihatnifemii@gmail.com">hello.fatihatnifemii@gmail.com</a></p>
+            <p>We respond to every inquiry within 48 hours.</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <div>
+            <h4>Our Location</h4>
+            <p>New York City, United States of America</p>
+            <p>Working with authors worldwide, across all time zones.</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🕐</div>
+          <div>
+            <h4>Response Time</h4>
+            <p>Monday through Friday, 9 AM to 6 PM EST</p>
+            <p>Weekend inquiries are answered by Monday morning.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-contact">
+        <h4>Follow Us on Social Media</h4>
+        <p>Join our growing community of authors, readers, and literary professionals for daily tips, insights, and inspiration.</p>
+        <div class="social-contact-links">
+          <a href="https://x.com/fatihatnifemi" target="_blank" title="X">𝕏</a>
+          <a href="https://www.youtube.com/channel/UCA_GvgMJBUgQyBauFhbVDiA" target="_blank" title="YouTube">▶</a>
+          <a href="https://www.tiktok.com" target="_blank" title="TikTok">♪</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="contact-form-wrapper animate-right">
+      <div class="form-header">
+        <h3>Send Us a Message</h3>
+        <p>Fill out the form below and we will be in touch shortly. All fields marked with * are required.</p>
+      </div>
+      <form class="form-grid" action="https://formspree.io/f/xoeeynbp" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="book-title">Book Title</label>
+          <input type="text" id="book-title" name="book-title" placeholder="The title of your book">
+        </div>
+        <div class="form-group">
+          <label for="journey-stage">Where Are You in Your Author Journey? *</label>
+          <select id="journey-stage" name="journey-stage" required>
+            <option value="" disabled selected>Select your stage</option>
+            <option value="writing">Currently Writing My Book</option>
+            <option value="editing">In the Editing Phase</option>
+            <option value="pre-launch">Preparing for Launch</option>
+            <option value="just-launched">Just Launched (Within 6 Months)</option>
+            <option value="established">Established Author (1+ Years)</option>
+            <option value="relaunch">Planning a Relaunch</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group full">
+          <label for="service-interest">Which Service Interests You Most? *</label>
+          <select id="service-interest" name="service-interest" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="book-launch">Book Launch Marketing</option>
+            <option value="author-brand">Author Brand Building</option>
+            <option value="social-media">Social Media Marketing</option>
+            <option value="email-marketing">Email Marketing</option>
+            <option value="amazon">Amazon Optimization</option>
+            <option value="publicity">Author Publicity & PR</option>
+            <option value="book-description">Book Description Rewrite</option>
+            <option value="full-package">Full Marketing Package</option>
+            <option value="not-sure">Not Sure Yet (Need Guidance)</option>
+          </select>
+        </div>
+        <div class="form-group full">
+          <label for="goals">Tell Us About Your Goals *</label>
+          <textarea id="goals" name="goals" placeholder="What are you hoping to achieve with your book? What does success look like for you? Share as much or as little as you like." required></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit">Send My Message →</button>
+        </div>
+        <p class="form-note">Your information is safe with us. We never share your details with third parties.</p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHAT TO EXPECT -->
+<section class="expect-section">
+  <div class="section-header animate-on-scroll">
+    <div class="section-tag">WHAT HAPPENS NEXT</div>
+    <h2>After You Reach Out</h2>
+    <p>Here is exactly what to expect once you send us your message.</p>
+  </div>
+  <div class="expect-grid">
+    <div class="expect-card animate-on-scroll">
+      <div class="expect-number">01</div>
+      <h3>We Read Everything</h3>
+      <p>We carefully review your form, your book details, and your goals. No automated replies. No generic responses.</p>
+    </div>
+    <div class="expect-card animate-on-scroll">
+      <div class="expect-number">02</div>
+      <h3>Personal Response</h3>
+      <p>Within 48 hours, you will receive a thoughtful email from Fatihat Nifemi herself, addressing your specific situation.</p>
+    </div>
+    <div class="expect-card animate-on-scroll">
+      <div class="expect-number">03</div>
+      <h3>Discovery Call</h3>
+      <p>If we are a good fit, we will schedule a free 30-minute discovery call to dive deeper into your book and your vision.</p>
+    </div>
+    <div class="expect-card animate-on-scroll">
+      <div class="expect-number">04</div>
+      <h3>Custom Proposal</h3>
+      <p>After our call, you will receive a tailored proposal outlining exactly how we can help, with clear pricing and timelines.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="section-header animate-on-scroll">
+    <div class="section-tag">COMMON QUESTIONS</div>
+    <h2>Frequently Asked Questions</h2>
+    <p>Quick answers to the questions we hear most often.</p>
+  </div>
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        <span>Is the discovery call really free?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Yes, completely free and no obligation. The discovery call is a chance for us to learn about your book and for you to learn about our approach. Even if you decide not to work with us, you will walk away with valuable insight.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        <span>Do you work with authors outside the United States?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Absolutely. While we are based in New York City, we work with authors across the globe. All of our services are delivered remotely, and we are experienced in collaborating across time zones.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        <span>My book is not finished yet. Can I still reach out?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Yes, and we encourage it. The earlier you start thinking about marketing, the better your launch will be. Many of our most successful clients began working with us during the writing or editing phase.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">
+        <span>How quickly will I hear back from you?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>We respond to all inquiries within 48 business hours. If you reach out on a Friday evening, expect to hear from us by Monday morning at the latest.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-content animate-on-scroll">
+    <h2>Your Book Deserves to Be Found</h2>
+    <p>Do not let another month go by with your book sitting in the shadows. Take the first step today and let us show you what is possible with the right book marketing strategy.</p>
+    <div class="cta-buttons">
+      <a href="packages.html" class="btn-gold">View Our Packages</a>
+      <a href="free-guide.html" class="btn-outline-light">Get the Free Guide</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>Fatihat Nifemi Literary Conduit</h3>
+      <p>Making literature visible, authors unforgettable, and stories impossible to overlook. A boutique book marketing studio based in New York City, serving authors worldwide.</p>
+      <div class="social-links">
+        <a href="https://x.com/fatihatnifemi" target="_blank" title="X">𝕏</a>
+        <a href="https://www.youtube.com/channel/UCA_GvgMJBUgQyBauFhbVDiA" target="_blank" title="YouTube">▶</a>
+        <a href="https://www.tiktok.com" target="_blank" title="TikTok">♪</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Book Launch Marketing</a></li>
+        <li><a href="services.html">Author Brand Building</a></li>
+        <li><a href="services.html">Social Media Marketing</a></li>
+        <li><a href="services.html">Email Marketing</a></li>
+        <li><a href="services.html">Amazon Optimization</a></li>
+        <li><a href="book-description.html">Book Description Rewrite</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get In Touch</h4>
+      <p>📍 New York City, USA</p>
+      <p>✉ hello.fatihatnifemii@gmail.com</p>
+      <p>Working with authors worldwide, serving the global literary community with care and precision.</p>
+    </div>
+  </div>
+  <div class="footer-quote">
+    <p>"Making literature visible, authors unforgettable, and stories impossible to overlook."</p>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Fatihat Nifemi Literary Conduit. All rights reserved.</p>
+    <div class="links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('active');
+  }
+  function toggleFaq(el) {
+    el.parentElement.classList.toggle('open');
+  }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.animate-on-scroll, .animate-left, .animate-right').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

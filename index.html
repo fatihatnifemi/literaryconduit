@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fatihat Nifemi Literary Conduit | Book Marketer & Author Growth Strategist</title>
+<meta name="description" content="Fatihat Nifemi Literary Conduit is a boutique book marketing studio helping authors build visibility, grow readership, and sell more books. Work with a professional Book Marketer and Author Growth Strategist.">
+<meta name="keywords" content="Book Marketer, Book Marketing, Author Growth Strategist, Book Launch, Author Branding, Book Promotion">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --burgundy: #6B2737;
+    --gold: #C9A961;
+    --ivory: #F5F0E8;
+    --charcoal: #1C1C1C;
+    --emerald: #0F3D2E;
+    --cream: #FFF9F0;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: Georgia, serif;
+    background: var(--cream);
+    color: var(--charcoal);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 { font-family: 'Bree Serif', Georgia, serif; font-weight: normal; }
+
+  /* NAVBAR */
+  .navbar {
+    position: fixed; top: 0; left: 0; right: 0;
+    background: rgba(255, 249, 240, 0.97);
+    backdrop-filter: blur(10px);
+    padding: 15px 5%;
+    display: flex; justify-content: space-between; align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(107, 39, 55, 0.08);
+  }
+  .nav-left { display: flex; align-items: center; gap: 12px; }
+  .nav-left img {
+    width: 45px; height: 45px; border-radius: 50%;
+    object-fit: cover; border: 2px solid var(--gold);
+  }
+  .logo-text {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.1rem; color: var(--burgundy); line-height: 1.1;
+  }
+  .logo-text span { display: block; font-size: 0.7rem; color: var(--emerald); letter-spacing: 2px; }
+  .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+  .nav-links a {
+    text-decoration: none; color: var(--charcoal);
+    font-family: 'Bree Serif', serif; font-size: 0.95rem;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--burgundy); }
+  .nav-links a.active { color: var(--burgundy); border-bottom: 2px solid var(--gold); }
+  .btn-outline-nav {
+    padding: 8px 20px; border: 2px solid var(--burgundy);
+    border-radius: 30px; color: var(--burgundy) !important;
+    transition: all 0.3s;
+  }
+  .btn-outline-nav:hover { background: var(--burgundy); color: var(--cream) !important; }
+  .btn-fill-nav {
+    padding: 8px 22px;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    border-radius: 30px; color: var(--cream) !important;
+    transition: all 0.3s;
+  }
+  .btn-fill-nav:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(107, 39, 55, 0.3); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 28px; height: 3px; background: var(--burgundy); border-radius: 2px; transition: 0.3s; }
+
+  /* HERO */
+  .hero {
+    margin-top: 80px;
+    min-height: 90vh;
+    display: flex; align-items: center;
+    padding: 60px 5%;
+    background: linear-gradient(135deg, rgba(107, 39, 55, 0.92), rgba(15, 61, 46, 0.88)),
+                url('founder.png') center/cover;
+    color: var(--cream);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-container {
+    max-width: 1300px; margin: 0 auto;
+    display: grid; grid-template-columns: 1.3fr 1fr; gap: 60px; align-items: center;
+    width: 100%; position: relative; z-index: 2;
+  }
+  .hero-text .tag {
+    display: inline-block; padding: 8px 20px;
+    background: rgba(201, 169, 97, 0.2); border: 1px solid var(--gold);
+    border-radius: 30px; color: var(--gold);
+    font-family: 'Bree Serif', serif; font-size: 0.85rem;
+    letter-spacing: 2px; margin-bottom: 25px;
+  }
+  .hero-text h1 {
+    font-size: 3.8rem; line-height: 1.1; margin-bottom: 25px; color: var(--cream);
+  }
+  .hero-text h1 span { color: var(--gold); font-style: italic; }
+  .hero-text p {
+    font-size: 1.15rem; margin-bottom: 35px;
+    color: rgba(245, 240, 232, 0.92); max-width: 550px;
+  }
+  .hero-buttons { display: flex; gap: 18px; flex-wrap: wrap; }
+  .btn-primary {
+    padding: 15px 35px;
+    background: linear-gradient(135deg, var(--gold), #d4b876);
+    color: var(--burgundy); text-decoration: none;
+    font-family: 'Bree Serif', serif; font-size: 1rem;
+    border-radius: 30px; transition: all 0.3s;
+    position: relative; overflow: hidden; border: none; cursor: pointer;
+  }
+  .btn-primary::before {
+    content: ''; position: absolute; top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s;
+  }
+  .btn-primary:hover::before { left: 100%; }
+  .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(201, 169, 97, 0.4); }
+  .btn-secondary {
+    padding: 15px 35px;
+    background: transparent; border: 2px solid var(--cream);
+    color: var(--cream); text-decoration: none;
+    font-family: 'Bree Serif', serif; font-size: 1rem;
+    border-radius: 30px; transition: all 0.3s;
+  }
+  .btn-secondary:hover { background: var(--cream); color: var(--burgundy); transform: translateY(-3px); }
+  .hero-image {
+    position: relative;
+  }
+  .hero-image img {
+    width: 100%; border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+    animation: float 6s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  /* WELCOME SECTION */
+  .welcome {
+    padding: 100px 5%;
+    background: var(--cream);
+  }
+  .welcome-container {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center;
+  }
+  .welcome-image img {
+    width: 100%; border-radius: 15px;
+    box-shadow: 0 20px 45px rgba(107, 39, 55, 0.15);
+  }
+  .welcome-text .tag {
+    display: inline-block; padding: 6px 18px;
+    background: var(--burgundy); color: var(--gold);
+    font-family: 'Bree Serif', serif; font-size: 0.8rem;
+    letter-spacing: 2px; border-radius: 20px; margin-bottom: 15px;
+  }
+  .welcome-text h2 {
+    font-size: 2.5rem; color: var(--burgundy); margin-bottom: 20px; line-height: 1.2;
+  }
+  .welcome-text p {
+    color: var(--charcoal); margin-bottom: 18px; font-size: 1.05rem;
+  }
+  .welcome-text .highlight {
+    font-style: italic; color: var(--emerald);
+    padding: 20px; border-left: 4px solid var(--gold);
+    background: var(--ivory); margin: 25px 0;
+  }
+
+  /* SERVICES PREVIEW */
+  .services-preview {
+    padding: 100px 5%;
+    background: var(--ivory);
+  }
+  .section-header { text-align: center; max-width: 800px; margin: 0 auto 60px; }
+  .section-tag {
+    display: inline-block; padding: 6px 18px;
+    background: var(--burgundy); color: var(--gold);
+    font-family: 'Bree Serif', serif; font-size: 0.8rem;
+    letter-spacing: 2px; border-radius: 20px; margin-bottom: 15px;
+  }
+  .section-header h2 { font-size: 2.5rem; color: var(--burgundy); margin-bottom: 15px; }
+  .section-header p { font-size: 1.1rem; color: var(--charcoal); }
+
+  .services-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; max-width: 1300px; margin: 0 auto;
+  }
+  .service-card {
+    background: var(--cream);
+    border-radius: 15px; overflow: hidden;
+    box-shadow: 0 10px 30px rgba(28, 28, 28, 0.08);
+    transition: transform 0.4s, box-shadow 0.4s;
+  }
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(107, 39, 55, 0.18);
+  }
+  .service-card img {
+    width: 100%; height: 200px; object-fit: cover;
+  }
+  .service-body { padding: 28px; }
+  .service-body h3 { font-size: 1.35rem; color: var(--burgundy); margin-bottom: 12px; }
+  .service-body p { color: var(--charcoal); font-size: 0.98rem; margin-bottom: 18px; }
+  .service-body a {
+    color: var(--emerald); text-decoration: none;
+    font-family: 'Bree Serif', serif; font-size: 0.95rem;
+    transition: color 0.3s;
+  }
+  .service-body a:hover { color: var(--burgundy); }
+
+  /* GUIDE SECTION */
+  .guide {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    color: var(--cream);
+  }
+  .guide-container {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1.3fr; gap: 60px; align-items: center;
+  }
+  .guide-image img {
+    width: 100%; max-width: 380px; display: block; margin: 0 auto;
+    animation: float 5s ease-in-out infinite;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
+  }
+  .guide-text .tag {
+    display: inline-block; padding: 6px 18px;
+    background: rgba(201, 169, 97, 0.2); border: 1px solid var(--gold);
+    color: var(--gold);
+    font-family: 'Bree Serif', serif; font-size: 0.8rem;
+    letter-spacing: 2px; border-radius: 20px; margin-bottom: 15px;
+  }
+  .guide-text h2 {
+    font-size: 2.5rem; color: var(--gold); margin-bottom: 20px; line-height: 1.2;
+  }
+  .guide-text p {
+    color: rgba(245, 240, 232, 0.92); margin-bottom: 25px; font-size: 1.05rem;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials {
+    padding: 100px 5%;
+    background: var(--cream);
+  }
+  .testimonial-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; max-width: 1200px; margin: 0 auto;
+  }
+  .testimonial-card {
+    background: var(--ivory); padding: 35px;
+    border-radius: 15px; position: relative;
+    border-top: 4px solid var(--gold);
+    transition: transform 0.3s;
+  }
+  .testimonial-card:hover { transform: translateY(-5px); }
+  .quote-mark {
+    font-family: 'Bree Serif', serif; font-size: 4rem;
+    color: var(--gold); line-height: 1; margin-bottom: 10px;
+  }
+  .testimonial-card p {
+    color: var(--charcoal); font-style: italic; margin-bottom: 20px;
+  }
+  .testimonial-author {
+    font-family: 'Bree Serif', serif; color: var(--burgundy); font-size: 1.05rem;
+  }
+  .testimonial-author span {
+    display: block; font-family: Georgia, serif;
+    font-size: 0.85rem; color: var(--emerald); font-style: italic;
+  }
+
+  /* CTA */
+  .cta-section {
+    padding: 100px 5%;
+    background: var(--ivory);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-content { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
+  .cta-content h2 { font-size: 2.7rem; color: var(--burgundy); margin-bottom: 20px; }
+  .cta-content p { font-size: 1.15rem; color: var(--charcoal); margin-bottom: 35px; }
+  .cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+  .btn-dark {
+    padding: 15px 35px;
+    background: linear-gradient(135deg, var(--burgundy), var(--emerald));
+    color: var(--cream); text-decoration: none;
+    font-family: 'Bree Serif', serif; font-size: 1rem;
+    border-radius: 30px; transition: all 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .btn-dark::before {
+    content: ''; position: absolute; top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+  }
+  .btn-dark:hover::before { left: 100%; }
+  .btn-dark:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(107, 39, 55, 0.35); }
+  .btn-outline-dark {
+    padding: 15px 35px;
+    background: transparent;
+    color: var(--burgundy); text-decoration: none;
+    font-family: 'Bree Serif', serif; font-size: 1rem;
+    border-radius: 30px; border: 2px solid var(--burgundy);
+    transition: all 0.3s;
+  }
+  .btn-outline-dark:hover { background: var(--burgundy); color: var(--cream); transform: translateY(-3px); }
+
+  /* FOOTER */
+  footer { background: var(--charcoal); color: var(--ivory); padding: 70px 5% 0; }
+  .footer-grid {
+    max-width: 1300px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 50px; padding-bottom: 50px;
+  }
+  .footer-brand h3 { color: var(--gold); font-size: 1.4rem; margin-bottom: 15px; font-family: 'Bree Serif', serif; }
+  .footer-brand p { color: rgba(245, 240, 232, 0.8); margin-bottom: 20px; font-size: 0.95rem; }
+  .social-links { display: flex; gap: 15px; }
+  .social-links a {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--burgundy); color: var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none; transition: all 0.3s;
+    font-family: 'Bree Serif', serif;
+  }
+  .social-links a:hover { background: var(--gold); color: var(--burgundy); transform: translateY(-3px); }
+  .footer-col h4 { color: var(--gold); margin-bottom: 18px; font-size: 1.1rem; font-family: 'Bree Serif', serif; }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 10px; }
+  .footer-col ul li a { color: rgba(245, 240, 232, 0.8); text-decoration: none; font-size: 0.95rem; transition: color 0.3s; }
+  .footer-col ul li a:hover { color: var(--gold); }
+  .footer-col p { color: rgba(245, 240, 232, 0.8); font-size: 0.95rem; margin-bottom: 10px; }
+  .footer-quote {
+    border-top: 1px solid rgba(201, 169, 97, 0.2);
+    border-bottom: 1px solid rgba(201, 169, 97, 0.2);
+    padding: 25px 0; text-align: center;
+    max-width: 1300px; margin: 0 auto;
+  }
+  .footer-quote p { font-style: italic; color: var(--gold); font-size: 1.05rem; font-family: 'Bree Serif', serif; }
+  .footer-bottom {
+    max-width: 1300px; margin: 0 auto; padding: 25px 0;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px;
+  }
+  .footer-bottom p { color: rgba(245, 240, 232, 0.7); font-size: 0.9rem; }
+  .footer-bottom .links a {
+    color: rgba(245, 240, 232, 0.7); text-decoration: none; margin-left: 20px; font-size: 0.9rem;
+  }
+  .footer-bottom .links a:hover { color: var(--gold); }
+
+  /* ANIMATIONS */
+  .animate-on-scroll { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+  .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+  .animate-left { opacity: 0; transform: translateX(-40px); transition: all 0.8s ease; }
+  .animate-left.visible { opacity: 1; transform: translateX(0); }
+  .animate-right { opacity: 0; transform: translateX(40px); transition: all 0.8s ease; }
+  .animate-right.visible { opacity: 1; transform: translateX(0); }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .hamburger { display: flex; }
+    .nav-links {
+      position: fixed; top: 75px; right: -100%; width: 75%; height: 100vh;
+      background: var(--cream); flex-direction: column; padding: 40px 25px;
+      transition: right 0.4s; box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+    }
+    .nav-links.active { right: 0; }
+    .hero-container, .welcome-container, .guide-container { grid-template-columns: 1fr; }
+    .hero-text h1 { font-size: 2.5rem; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 35px; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .footer-bottom .links a { margin: 0 10px; }
+  }
+  @media (max-width: 500px) {
+    .hero { padding: 40px 5%; }
+    .hero-text h1 { font-size: 2rem; }
+    .section-header h2, .welcome-text h2, .guide-text h2, .cta-content h2 { font-size: 1.9rem; }
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="founder.png" alt="Fatihat Nifemi, Book Marketer">
+    <div class="logo-text">
+      Fatihat Nifemi
+      <span>LITERARY CONDUIT</span>
+    </div>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="packages.html">Packages</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="book-description.html">Book Description</a></li>
+    <li><a href="free-guide.html" class="btn-outline-nav">Free Guide</a></li>
+    <li><a href="contact.html" class="btn-fill-nav">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <div class="tag">BOOK MARKETER & AUTHOR GROWTH STRATEGIST</div>
+      <h1>Where Great Books Meet Their <span>Rightful Readers</span></h1>
+      <p>A boutique book marketing studio helping authors build visibility, grow loyal readership, and sell more books through intentional strategy and literary artistry.</p>
+      <div class="hero-buttons">
+        <a href="contact.html" class="btn-primary">Book a Discovery Call</a>
+        <a href="services.html" class="btn-secondary">Explore Services</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="founder.png" alt="Book Marketing for Authors">
+    </div>
+  </div>
+</section>
+
+<!-- WELCOME -->
+<section class="welcome">
+  <div class="welcome-container">
+    <div class="welcome-image animate-left">
+      <img src="welcome.png" alt="Fatihat Nifemi Literary Conduit welcomes authors">
+    </div>
+    <div class="welcome-text animate-right">
+      <div class="tag">WELCOME</div>
+      <h2>Your Book Deserves More Than a Launch. It Deserves a Legacy.</h2>
+      <p>At Fatihat Nifemi Literary Conduit, we believe every great book is also a great opportunity, an opportunity to build a readership, an author brand, and a lasting place in the literary world.</p>
+      <p>We are not a marketing agency with a side interest in books. We are literary first, rooted in the craft, the culture, and the community of publishing. Every strategy we design honors the artistry of your work while pursuing real, measurable growth.</p>
+      <div class="highlight">
+        "Making literature visible, authors unforgettable, and stories impossible to overlook."
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="services-preview">
+  <div class="section-header animate-on-scroll">
+    <div class="section-tag">OUR SERVICES</div>
+    <h2>Book Marketing, Reimagined</h2>
+    <p>Comprehensive services designed to help authors at every stage of their literary journey.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card animate-on-scroll">
+      <img src="service-1.png" alt="Book Launch Marketing">
+      <div class="service-body">
+        <h3>Book Launch Marketing</h3>
+        <p>Engineered launch campaigns that build anticipation, mobilize your community, and position your book for sustained visibility.</p>
+        <a href="services.html">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-card animate-on-scroll">
+      <img src="service-2.png" alt="Author Brand Building">
+      <div class="service-body">
+        <h3>Author Brand Building</h3>
+        <p>Craft a distinctive author brand that readers recognize, publishers respect, and media remembers.</p>
+        <a href="services.html">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-card animate-on-scroll">
+      <img src="service-3.png" alt="Social Media Marketing">
+      <div class="service-body">
+        <h3>Social Media Marketing</h3>
+        <p>Intentional content strategies that grow audiences who actually convert into readers.</p>
+        <a href="services.html">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-card animate-on-scroll">
+      <img src="service-4.png" alt="Email Marketing for Authors">
+      <div class="service-body">
+        <h3>Email Marketing</h3>
+        <p>Build, nurture, and monetize author newsletters that turn casual readers into devoted fans.</p>
+        <a href="services.html">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-card animate-on-scroll">
+      <img src="service-5.png" alt="Amazon Book Optimization">
+      <div class="service-body">
+        <h3>Amazon Optimization</h3>
+        <p>Optimize your listing, categories, keywords, and content to maximize discoverability and conversion.</p>
+        <a href="services.html">Learn More →</a>
+      </div>
+    </div>
+    <div class="service-card animate-on-scroll">
+      <img src="service-6.png" alt="Author Publicity and PR">
+      <div class="service-body">
+        <h3>Author Publicity & PR</h3>
+        <p>Pitch your story to podcasts, blogs, and publications that reach your ideal readers.</p>
+        <a href="services.html">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDE -->
+<section class="guide">
+  <div class="guide-container">
+    <div class="guide-image animate-left">
+      <img src="guide-cover.png" alt="Free Book Marketing Guide">
+    </div>
+    <div class="guide-text animate-right">
+      <div class="tag">FREE DOWNLOAD</div>
+      <h2>10 Book Marketing Mistakes to Avoid</h2>
+      <p>Grab our free guide and discover the most common book marketing mistakes that quietly sabotage author success, plus exactly what to do instead.</p>
+      <p>Whether you are preparing for your first book launch or looking to breathe new life into an existing title, this guide is packed with insights from real author campaigns.</p>
+      <a href="free-guide.html" class="btn-primary">Download Free Guide</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="section-header animate-on-scroll">
+    <div class="section-tag">AUTHOR WORDS</div>
+    <h2>What Authors Are Saying</h2>
+    <p>Real experiences from authors who trusted their work to our care.</p>
+  </div>
+  <div class="testimonial-grid">
+    <div class="testimonial-card animate-on-scroll">
+      <div class="quote-mark">"</div>
+      <p>Working with Fatihat Nifemi changed how I think about my own book. It is no longer just a project. It is a product with a purpose and a readership waiting to be found.</p>
+      <div class="testimonial-author">Amara O.<span>Debut Novelist</span></div>
+    </div>
+    <div class="testimonial-card animate-on-scroll">
+      <div class="quote-mark">"</div>
+      <p>I have worked with other marketers before but none understood the literary world like this. Every strategy felt tailored, thoughtful, and respectful of my voice.</p>
+      <div class="testimonial-author">David K.<span>Memoirist</span></div>
+    </div>
+    <div class="testimonial-card animate-on-scroll">
+      <div class="quote-mark">"</div>
+      <p>My launch exceeded every expectation. The attention to detail, the care, the strategy, it all came together in ways I could never have planned alone.</p>
+      <div class="testimonial-author">Zainab M.<span>Non-Fiction Author</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-content animate-on-scroll">
+    <h2>Ready to Build Your Author Legacy?</h2>
+    <p>Let us talk about your book, your goals, and how we can bring your literary vision to the readers who are already waiting for it.</p>
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn-dark">Start the Conversation</a>
+      <a href="packages.html" class="btn-outline-dark">View Packages</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>Fatihat Nifemi Literary Conduit</h3>
+      <p>Making literature visible, authors unforgettable, and stories impossible to overlook. A boutique book marketing studio based in New York City, serving authors worldwide.</p>
+      <div class="social-links">
+        <a href="https://x.com/fatihatnifemi" target="_blank" title="X">𝕏</a>
+        <a href="https://www.youtube.com/channel/UCA_GvgMJBUgQyBauFhbVDiA" target="_blank" title="YouTube">▶</a>
+        <a href="https://www.tiktok.com" target="_blank" title="TikTok">♪</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Book Launch Marketing</a></li>
+        <li><a href="services.html">Author Brand Building</a></li>
+        <li><a href="services.html">Social Media Marketing</a></li>
+        <li><a href="services.html">Email Marketing</a></li>
+        <li><a href="services.html">Amazon Optimization</a></li>
+        <li><a href="book-description.html">Book Description Rewrite</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get In Touch</h4>
+      <p>📍 New York City, USA</p>
+      <p>✉ hello.fatihatnifemii@gmail.com</p>
+      <p>Working with authors worldwide, serving the global literary community with care and precision.</p>
+    </div>
+  </div>
+  <div class="footer-quote">
+    <p>"Making literature visible, authors unforgettable, and stories impossible to overlook."</p>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Fatihat Nifemi Literary Conduit. All rights reserved.</p>
+    <div class="links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('active');
+  }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.animate-on-scroll, .animate-left, .animate-right').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
